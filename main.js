@@ -6,6 +6,10 @@ $(document).ready(function() {
     $("html, body").animate({
       scrollTop: $("#scroll-" + page_id).offset().top - 300
     }, 1000);
+  }  else if (page_id == "aboutinfo") {
+    $("html, body").animate({
+      scrollTop: $("#scroll-" + page_id).offset().top - 100
+    }, 1000);
 }
 
 });
