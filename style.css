@@ -1,1 +1,491 @@
+/*
+====================
+====================
+NAVIGATION
+====================
+====================
+*/
+*, a {
+  text-decoration: none;
+  font-family: roboto;
+}
 
+header {
+  background-color: #333;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+header .header-brand {
+  font-family: roboto;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header nav ul {
+  margin: 0 auto;
+  display: block;
+  width: fit-content;
+}
+
+header nav ul li {
+  display: inline-block;
+  list-style: none;
+  float: left;
+  padding: 0 16px;
+}
+
+header nav ul li a {
+  font-family: roboto;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+  color: #a1a1a1;
+}
+
+@media only screen and (min-width: 768px) {
+
+  header .header-brand {
+    margin: 31px 0;
+    text-align: left;
+    line-height: 38px;
+    padding: 0px 20px 0px 40px;
+    border-right: 3px solid #fff;
+    float: left;
+  }
+
+  header nav ul {
+    margin: 20px 0px;
+    float: left;
+  }
+
+  header nav ul li {
+    display: inline-block;
+    list-style: none;
+    float: left;
+    padding: 0 16px;
+  }
+
+  header nav ul li a {
+    line-height: 60px;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+  header .header-brand {
+    padding: 0px 22px 0px 40px;
+    font-size: 30px;
+  }
+
+  header nav ul li {
+    padding: 0 22px;
+  }
+
+  header nav ul li a {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  header .header-brand {
+    font-size: 34px;
+  }
+
+  header nav ul li a {
+    font-size: 24px;
+  }
+}
+
+
+/*
+====================
+====================
+CAROUSEL
+====================
+====================
+*/
+
+.carousel {
+  padding-top: 100px;
+}
+
+.carousel-item img { /*Contain Carousel Height*/
+  object-fit: cover;
+  object-position: center;
+  height: 60vh;
+}
+
+.carousel h5 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 3px 3px 6px #111;
+}
+
+.carousel p {
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 3px 3px 6px #111;
+}
+
+/*
+====================
+====================
+HOME PAGE MAIN CONTENT
+====================
+====================
+*/
+
+main {
+  min-height: 60vh;
+  width: 100%;
+}
+
+#row1-index {
+  background-color: #333;
+}
+
+.column1-flex {
+  display: flex;
+  min-height: 50vh;
+  width: 100%;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.column1-flex h5 {
+  font-size: 3rem;
+}
+
+.column1-flex button {
+  font-size: 2rem;
+  color: #fff;
+  border-color: #fff;
+  border-width: 2px;
+}
+
+.column1-flex p {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.column2-flex {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 50vh;
+  width: 100%;
+  color: #333;
+}
+
+.column2-flex article h5 {
+  font-size: 2rem;
+}
+
+.learn-more-hover {
+  color: #ff9900;
+  font-size: 2rem;
+  transition: 0.2s ease-in-out all;
+}
+
+.learn-more-hover a {
+  color: #ff9900;
+}
+
+.learn-more-hover:hover {
+  font-size: 2.1rem;
+}
+
+.img-container img {
+  width: 335px
+}
+
+.heinrich-quote {
+  line-height: 2rem;
+}
+
+.heinrich-quote p {
+  font-size: 1.5rem;
+}
+
+/*
+====================
+====================
+ABOUT PAGE
+====================
+====================
+*/
+
+.about-bg-image {
+  position: relative;
+  margin-top: 100px;
+  height: 100%;
+  padding-bottom: 66.666%;
+  background-image: url(img/everestbc.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.image-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.image-overlay h5 {
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+
+.image-overlay p {
+  font-size: 1.5rem;
+}
+
+.about-container {
+  width: 80%;
+  padding-top: 3rem;
+  min-height: 40vh;
+  margin: 0 auto;
+}
+
+.about-container h2 {
+  font-size: 3rem;
+  color: #ff9900;
+  padding-bottom: 1rem;
+}
+
+.about-container p {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  padding-bottom: 3rem;
+}
+
+.yt-container {
+  margin-bottom: 3rem;
+}
+
+.yt-video {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 56.25%;
+  padding-top: 0;
+  height: 0;
+}
+
+.yt-video iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  .image-overlay h5 {
+    font-size: 3rem;
+  }
+
+  .image-overlay p {
+    font-size: 2rem;
+  }
+
+  .about-container h2 {
+    font-size: 3.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .about-container p {
+    font-size: 2rem;
+    line-height: 2.3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .image-overlay h5 {
+    font-size: 4rem;
+  }
+
+  .image-overlay p {
+    font-size: 3rem;
+  }
+
+  .about-container h2 {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  .about-container p {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .image-overlay h5 {
+    font-size: 5rem;
+  }
+
+  .image-overlay p {
+    font-size: 4rem;
+  }
+
+  .about-container h2 {
+    font-size: 4.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .about-container p {
+    font-size: 3rem;
+    line-height: 3.3rem;
+  }
+}
+
+/*
+====================
+====================
+SERVICES
+====================
+====================
+ */
+
+ .services-main {
+   margin-top: 100px;
+}
+
+.services-info {
+  padding-top: 3rem;
+  width: 90%;
+  margin: auto;
+}
+
+.services-info h2 {
+  font-size: 3rem;
+}
+
+.services-info h4 {
+  font-size: 2.2rem;
+  color: #ff9900;
+}
+
+.services-info p {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+.gallery-row {
+  padding: 3rem 0;
+  width: 90%;
+  margin: auto;
+}
+
+/*
+====================
+====================
+CONTACT
+====================
+====================
+ */
+
+ #contact-header {
+   font-size: 3rem;
+   margin: 3rem 0;
+ }
+
+ .contact-bg-image {
+   position: relative;
+   margin-top: 100px;
+   height: 100%;
+   padding-bottom: 75%;
+   background-image: url(img/contact-img.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+ }
+
+ .contact-image-overlay {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   color: #333;
+ }
+
+ .contact-image-overlay h2 {
+   font-size: 2rem;
+   padding: 0 1rem;
+ }
+
+ .contact-image-overlay h4 {
+   font-size: 1.5rem;
+ }
+
+
+
+ @media screen and (min-width: 576px) {
+   .contact-image-overlay h2 {
+     font-size: 3rem;
+   }
+
+   .contact-image-overlay h4 {
+     font-size: 2rem;
+   }
+ }
+
+ @media screen and (min-width: 768px) {
+   .contact-image-overlay h2 {
+     font-size: 4rem;
+   }
+
+   .contact-image-overlay h4 {
+     font-size: 3rem;
+   }
+ }
+
+/*
+====================
+====================
+FOOTER STYLING
+====================
+====================
+ */
+
+ .page-footer {
+  height: 9rem;
+  background-color: #444;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-footer p {
+  margin-bottom: 0;
+  font-size: 24px;
+}
+.footer-logo {
+  color: #fff;
+}
